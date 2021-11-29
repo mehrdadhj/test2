@@ -1,12 +1,17 @@
 export class CorpService {
     private data: string[];
-    CallApi(): string[] {
-        //call api
+
+    constructor() {
+        this.data = this.callApi();
+    }
+
+    private callApi(): string[] {
         this.data = [];
+        //call api
         return this.data;
     }
 
-    GetData(): string[] {
+    public GetData(): string[] {
         return this.data;
     }
 

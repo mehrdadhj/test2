@@ -4,6 +4,6 @@ export class CorpsPage {
     data: string[];
 
     constructor(private corpService: CorpService) {
-        this.data = corpService.CallApi();
+        this.data = corpService.GetData();
     }
 }
